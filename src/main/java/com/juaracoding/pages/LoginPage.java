@@ -21,9 +21,24 @@ public class LoginPage {
     WebElement btnLogin;
 
     public void login(String username, String password){
+        delay(2);
         this.username.sendKeys(username);
+        delays(2);
         this.password.sendKeys(password);
         btnLogin.click();
     }
-
+    static void delay(long detik) {
+        try {
+            Thread.sleep(detik * 1000); // delay 3 detik
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    static void delays(long detik) {
+        try {
+            Thread.sleep(detik * 500); // delay 3 detik
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
