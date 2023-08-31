@@ -17,7 +17,7 @@ public class Main {
         driver.get("https://shop.demoqa.com/my-account/");
 
         LoginPage loginPage = new LoginPage();
-        loginPage.login("fachrulaziz95","vegazr4362");
+        loginPage.login("iniUsernamenya","iniPasswordnya");
 
         AddProduct addProduct = new AddProduct();
         addProduct.getClass();
